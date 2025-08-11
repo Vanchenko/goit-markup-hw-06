@@ -76,10 +76,6 @@ img {
   }
 }
 
-/* header .container {
-    display: flex;
-} */
-
 .nav-header {
     display: flex;
     align-items: center;
@@ -181,7 +177,6 @@ img {
     display: flex;
     flex-direction: column;
     padding: 0;
-    /* margin: 0 0 0 332px; */
 }
 
 .contacts {
@@ -192,7 +187,6 @@ img {
     font-style: normal;
     color: #434455;
     display: block;
-    /* padding: 24px 0px 24px 0px; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -335,7 +329,6 @@ img {
     font-style: normal;
     color: #434455;
     display: block;
-    /* padding: 24px 0px 24px 0px; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active-cont-mail {
@@ -363,7 +356,6 @@ img {
 /* конец хедера */
 /* страница Studio */
 .hero {
-    /* background: var(--textbasecolor); */
     max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)),
@@ -371,7 +363,6 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 188px 0 188px 0;
     margin: 0 auto;
 }
 @media (min-resolution: 192dpi) {
@@ -386,6 +377,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 72px 0;
 
 }
 .hero-title {
@@ -435,6 +427,9 @@ img {
   .button-order {
     margin-top: 36px;
   }
+  .hero .container {
+    padding: 112px 0;
+    }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .hero {
@@ -455,6 +450,9 @@ img {
   .logo {
     margin-right: 76px;
   }
+  .hero .container {
+    padding: 188px 0;
+    }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     .hero {
@@ -464,11 +462,11 @@ img {
     }
 }
 
-.section {
-    padding: 96px 0px;
-}
 .benefits {
     
+}
+.benefits .container {
+    padding: 96px 0px;
 }
 .visually-hidden {
   position: absolute;
@@ -546,7 +544,7 @@ img {
   .benefits-item {
     width: calc((100% - 72px) / 4);
 }
-    .section {
+    .benefits .container {
     padding: 120px 0px;
 }
     .benefits-title {
@@ -563,16 +561,14 @@ img {
 
 .team {
     background-color: #F4F4FD;
-    margin-top: 0px;
-    padding: 96px 0px;
-
 }
 
 .team .container {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
+    padding: 96px 0px;
+    margin-top: 0px;
 }
 
 .team-title {
@@ -676,12 +672,12 @@ img {
   .benefits-item {
     width: calc((100% - 72px) / 4);
 }
-    .team {
+    .team .container {
     padding: 120px 0px;
 }
 }
 /* секция Portfolio */
-.portfolio {
+.portfolio .container {
     padding: 96px 0px;
 }
 .portfolio-title {
@@ -733,11 +729,6 @@ img {
     color: var(--footerlogocol);
 }
 
-/* .overlay-text {
-    padding: 40px 32px 0 32px;
-    color: var(--footerlogocol);
-} */
-
 .portfolio-item {
     background-color: #ffffff;
     padding: 32px 16px;
@@ -785,7 +776,7 @@ img {
   .portfolio-card {
     max-width: calc((100% - 48px) / 3);
 }
-    .portfolio {
+    .portfolio .container {
         padding: 120px 0px;
 }
 }
@@ -793,17 +784,17 @@ img {
 /* общий футер */
 .footer {
     background-color: var(--textbasecolor);
-    padding: 100px 0px;
+}
+.footer .container {
+    padding: 96px 0px;
 }
 .footer-list {
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    /* align-items: baseline; */
 }
 .footer-block-one {
-    /* margin-right: 120px; */
     display: flex;
     flex-direction: column;
     margin-bottom: 72px;
@@ -840,7 +831,6 @@ footer .logo{
     list-style: none;
     width: 208px;
     display: flex;
-    /* margin: 16px 0px 0px 0px; */
     padding: 0;
     gap: 16px;
 }
@@ -885,7 +875,6 @@ footer .logo{
     letter-spacing: 0.04em;
     color: #ffffff;
     width: 288px;
-    /* width: 264px; */
     height: 40px;
     padding-left: 16px;
     outline: transparent;
@@ -920,13 +909,12 @@ footer .logo{
     background-color: var(--buttonbackcol);
 }
 @media screen and (min-width: 768px) {
-    .footer{
-        padding: 96px 0 96px 92px;
+    .footer .container {
+    padding: 96px 0 96px 108px;
     }
     .footer-list {
         flex-direction: row;
         flex-wrap: wrap;
-        /* row-gap: 72px; */
         column-gap: 24px;
         align-items: start;
     }
@@ -947,7 +935,7 @@ footer .logo{
     }
 }
 @media screen and (min-width: 1158px) {
-  .footer {
+  .footer .container{
     padding: 100px 0px;
 }
   .footer-block-one {
